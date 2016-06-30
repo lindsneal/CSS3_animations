@@ -1,0 +1,1047 @@
+
+
+/**************************EXPLORE PAGE ANIMATIONS **************************************/
+html, body{
+  width: 100%;
+  background: #000000;
+  padding-top:0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.col-md-9{
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main_Box_Black{
+  background-color:#000000;
+  margin-top: 100px;
+}
+.marginTop, .marginTopBlack{
+  margin-top: 150px;
+}
+
+.marginTopBlack {
+    margin-top: 0px;
+}
+.containerGears.bottom {
+  padding-bottom: 0;
+}
+.containerGears.Top {
+  padding-top: 0;
+}
+.gearbox {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+.containerGears {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 100%;
+    padding: 5%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.containerGears.pad10{
+  margin-top:10%;
+}
+.exploreHeader2 h1{
+  text-align: right;
+  padding-bottom: 2%;
+  color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 3.5em;
+}
+.exploreHeader2{
+  width: 60%;
+  float: right;
+}
+/*************  Promotion and Analytics - SVG   Promotion animation bar graph *********/
+.containerSvg {
+    width: 50%;
+    height: 0;
+    padding-top: 35%;
+    position: relative;
+}
+
+#Layer_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.path {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	-webkit-animation:dash 5s linear forwards;
+	animation: dash 5s linear forwards;
+	-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+	animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*************   Web Development -  Gears animation *****************************/
+@-webkit-keyframes clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes counter-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes counter-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.gearbox.turn .overlay {
+	background: transparent;
+}
+.gear {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+}
+.gear.large {
+	height: 120px;
+	width: 120px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+}
+.gear.large:after {
+	height: 96px;
+	width: 96px;
+	-moz-border-radius: 48px;
+	-webkit-border-radius: 48px;
+	border-radius: 48px;
+	margin-left: -48px;
+	margin-top: -48px;
+}
+.gear.one {
+	top: 27px;
+	left: 17px;
+}
+.gear.two {
+	top: 71px;
+	left: 67px;
+}
+.gear.three {
+	top: 115px;
+	left: 18px;
+}
+.gear.four {
+	top: 22px;
+	left: 131px;
+}
+.gear:after {
+	content: "";
+	position: absolute;
+	height: 36px;
+	width: 36px;
+	-moz-border-radius: 36px;
+	-webkit-border-radius: 36px;
+	border-radius: 36px;
+	background: #111;
+	top: 50%;
+	left: 50%;
+	margin-left: -18px;
+	margin-top: -18px;
+	z-index: 3;
+	-moz-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+	-webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+}
+.gear-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #004F4B;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.large .gear-inner {
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+}
+.gear.one .gear-inner {
+	-webkit-animation: counter-clockwise 7s infinite linear;
+	-moz-animation: counter-clockwise 7s infinite linear;
+}
+.gear.two .gear-inner {
+	-webkit-animation: clockwise 7s infinite linear;
+	-moz-animation: clockwise 7s infinite linear;
+}
+.gear.three .gear-inner {
+	-webkit-animation: counter-clockwise 7s infinite linear;
+	-moz-animation: counter-clockwise 7s infinite linear;
+}
+.gear.four .gear-inner {
+	-webkit-animation: counter-clockwise 10s infinite linear;
+	-moz-animation: counter-clockwise 10s infinite linear;
+}
+.gear-inner .bar {
+	background: #004F4B;
+	height: 16px;
+	width: 76px;
+	position: absolute;
+	left: 50%;
+	margin-left: -38px;
+	top: 50%;
+	margin-top: -8px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.large .gear-inner .bar {
+	margin-left: -68px;
+	width: 136px;
+}
+.gear-inner .bar:nth-child(2) {
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-webkit-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+.gear-inner .bar:nth-child(3) {
+	-moz-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	-webkit-transform: rotate(120deg);
+	transform: rotate(120deg);
+}
+.gear-inner .bar:nth-child(4) {
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.gear-inner .bar:nth-child(5) {
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+.gear-inner .bar:nth-child(6) {
+	-moz-transform: rotate(150deg);
+	-ms-transform: rotate(150deg);
+	-webkit-transform: rotate(150deg);
+	transform: rotate(150deg);
+}
+
+
+/********  Web Administration - administration lock  color animation*****************/
+#adminBox {
+	display:block;
+	margin-top: 3%;
+	background-color: black;
+}
+#adminLockImg{
+	width: 290px;
+    height: 298px;
+	background-image: url("../images/webAdmin_animation.png");
+	position: relative;
+
+}
+#adminLock {
+    width: 290px;
+    height: 298px;
+    background-color: black;
+    -webkit-animation-name: adminLock; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: adminLock;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes adminLock {
+    0%   {background-color: black;}
+    5%  {background-color: green;}
+    100% {background-color: red;}
+}
+/* Standard syntax */
+@keyframes adminLock {
+    0%   {background-color: black;}
+    5%  {background-color: green;}
+    100% {background-color: red;}
+}
+
+
+
+/*********Content Development - pencil animation **************/
+#box1{
+	float:left;
+	width:96px;
+	height:290px;
+	background-image: url("../images/webContent_animation.png");
+	position: relative;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px; 
+		/* Safari */-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+	10%  {-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	20%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+    25%  {left:200px; top:0px;}
+	30%{-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	40%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+	50%  {left:200px; top:0px; -webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	60%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+	70%{-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	75%  { left:0px; top:0px;}
+	80%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera*/-o-transform: rotate(-5deg);}
+	90%{-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	100% { left:0px; top:0px; -webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+}
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;
+		/* Safari */-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+	10%  {-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	20%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+    25%  {left:200px; top:0px;}
+	30%{-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	40%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+    50%  {left:200px; top:0px; -webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+	60%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+	70%{-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+    75%  { left:0px; top:0px;}
+	80%{-webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera*/-o-transform: rotate(-5deg);}
+	90%{-webkit-transform: rotate(0deg);
+		/* Firefox */-moz-transform: rotate(0deg);
+		/* IE */-ms-transform: rotate(0deg);
+		/* Opera */-o-transform: rotate(0deg);}
+    100% { left:0px; top:0px; -webkit-transform: rotate(-5deg);
+		/* Firefox */-moz-transform: rotate(-5deg);
+		/* IE */-ms-transform: rotate(-5deg);
+		/* Opera */-o-transform: rotate(-5deg);}
+}
+
+
+/*********Saas Development - cloud animation  **************/
+#box2_1{
+	float:left;
+	width:250px;
+	height:156px;
+	background-image: url("../images/SaaSDevelopment_animation.png");
+	position: relative;
+	z-index:20;
+}
+#box2{
+	width:249px;
+	height:155px;
+	background-image: url("../images/SaaSDevelopment_animation2_2.png");
+	position: relative;
+	-webkit-animation-name: example2; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+	animation-name: example2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	z-index:10;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:100px;}
+    50%  {left:0px; top:100px;}
+    75%  { left:0px; top:100px;}
+    100% { left:0px; top:100px;}
+}
+/* Standard syntax */
+@keyframes example2 {
+    0%    {left:0px; top:0px;}
+    25%  {left:0px; top:100px;}
+    50%  {left:0px; top:100px;}
+    75%  {left:0px; top:100px;}
+    100% {left:0px; top:100px;}
+}
+  
+  
+  
+/***************Web Design - flower animation *************/
+ #flower {
+	width: 190px;
+	height: 220px;
+	background-image: url('../images/webDesign_sprite.png');
+	position: relative;
+	-webkit-animation-name: play; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+	-webkit-animation:play 2s steps(5) infinite; /* Chrome, Safari, Opera */
+	animation-name: play;
+	animation-duration: 2s;
+	animation: play 2s steps(5) infinite;
+} 
+@-webkit-keyframes play{
+	100%{background-position: -950px;}
+}
+@keyframes play {
+   100% { background-position: -950px; }
+}
+
+
+
+/***************** Social  Media - Mega Phone animation  *****************/
+#socialAnimationBox2{
+  display:none;
+  }
+#socialAnimationBox{
+	width:500px;
+	height:254px;
+	overflow: hidden;
+}
+#socialMegaPhone{
+	width:300px;
+	height:254px;
+	float:left;
+	position:relative;
+	background-image:url('../images/socialMediaAnimation.png');
+	z-index:20;
+}
+#socialIcons{
+	width:135px;
+	height:254px;
+	float:left;
+	position:relative;
+	background-image:url('../images/socialAnimationIcons.png');
+	-webkit-animation: social 8s steps(8) infinite;
+	animation: social 8s steps(8) infinite;
+	z-index:20;
+}
+@keyframes social {
+   0% { background-position: 1081px; }
+   100% { background-position: -1081px; }
+}
+@-webkit-keyframes social{
+	0% { background-position: 1081px; }
+   100% { background-position: -1081px; }
+}
+
+
+
+/***************Mobile Apps - phone animation *************/
+#mobilePhoneBox{
+	width:250px;
+	height:257px;
+	background-color:black;
+	position: relative;
+
+}
+#mobilePhone {
+	width: 250px;
+	height: 257px;
+	position:absolute;
+	top:0;
+	background-image:url('../images/mobileApp_animation.png');
+	z-index: 15;
+} 
+#mobileColor {
+	width: 250px;
+	height: 257px;
+	position:absolute;
+	top:0;
+	background: url('../images/rainbow_sprite.png');
+	-webkit-animation: play2 4s steps(5) infinite;
+	animation: play2 4s steps(5) infinite;
+	z-index:2;
+} 
+@keyframes play2 {
+   0% { background-position: 500px; }
+   100% { background-position: -600px; }
+}
+@-webkit-keyframes play2{
+	0% { background-position: 500px; }
+   100% { background-position: -600px; }
+}
+
+
+/***************  Responsive Design - responsive box animation   *************/
+#OuterboxResponsive {
+	width: 250px;
+    height: 250px;
+	float:left;
+
+}
+/* The animation code */
+@keyframes responsiveBox {
+    0%   {width: 55px; height: 95px;}
+	10%   {width: 55px; height: 95px;}
+	25%  {width: 115px; height: 155px;}
+    35%  {width: 115px; height: 155px;}
+	50%  {width: 205px; height: 125px;}
+    75%  {width: 205px; height: 125px;}
+	85%  {width: 255px; height: 185px;}
+    100% {width: 255px; height: 185px;}
+}
+@-webkit-keyframes responsiveBox{
+    0%   {width: 55px; height: 95px;}
+	10%   {width: 55px; height: 95px;}
+	25%  {width: 115px; height: 155px;}
+    35%  {width: 115px; height: 155px;}
+	50%  {width: 205px; height: 125px;}
+    75%  {width: 205px; height: 125px;}
+	85%  {width: 255px; height: 185px;}
+    100% {width: 255px; height: 185px;}
+	}
+
+/* The element to apply the animation to */
+#boxResponsive {
+    width: 255px;
+    height: 185px;
+    position: relative;
+    background-color: #FEC425;
+	border: solid 3px white;
+	border-radius: 10px;
+	border-style: inset;
+    animation-name: responsiveBox;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: responsiveBox; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+	 -moz-animation: responsiveBox 4s infinite; /* Chrome, Safari, Opera */
+}
+
+
+
+/****** Responsive Design - Responsive grid *******/
+
+#OuterboxResponsive1 {
+	width: 450px;
+  height:500px;
+}
+/* The animation code */
+@keyframes responsiveBox2 {
+    0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:220px;}
+  100% {left:-110px; top: 220px;}
+}
+@-webkit-keyframes responsiveBox2{
+	0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:220px;}
+  100% {left:-110px; top: 220px;}
+	}
+
+@keyframes responsiveBox4 {
+    0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:220px;}
+  100% {left:-110px; top: 220px;}
+}
+@-webkit-keyframes responsiveBox4{
+    0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:220px;}
+  100% {left:-110px; top: 220px;}
+}
+
+/* The element to apply the animation to */
+#boxResponsive1, #boxResponsive2, #boxResponsive3,#boxResponsive4{
+  width: 100px;
+  height: 100px;
+  float:left;
+  margin-left:10px;
+  position: relative;
+  background-color: #FEC425;
+  border: solid 3px white;
+  border-radius: 10px;
+  border-style: inset;
+}
+#boxResponsive2 {
+  animation-name: responsiveBox2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox2; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox2 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive3 {
+  clear:both;
+  margin-top:10;
+  animation-name: responsiveBox3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox3; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox3 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive4 {
+  margin-top:10;
+  animation-name: responsiveBox4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox4; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox4 4s infinite; /* Chrome, Safari, Opera */
+}
+
+
+/*********  Responsive Design - Elastic Responsive   ***********/
+#OuterboxResponsive1_E {
+  width: 500px;
+  height:500px;
+}
+/* The animation code */
+@keyframes responsiveBox1_E {
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+}
+@-webkit-keyframes responsiveBox1_E{
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+	}
+@keyframes responsiveBox2_E {
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+}
+@-webkit-keyframes responsiveBox2_E{
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+	}
+@keyframes responsiveBox3_E {
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+}
+@-webkit-keyframes responsiveBox3_E{
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+}
+@keyframes responsiveBox4_E {
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+}
+@-webkit-keyframes responsiveBox4_E   {
+     0%   {width:22%; height:22%;}
+    100% {width:12%; height:12%;}
+}
+#boxResponsive1_E, #boxResponsive2_E, #boxResponsive3_E, #boxResponsive4_E{
+  width: 22%;
+  height: 22%;
+  float:left;
+  margin-left:10px;
+  position: relative;
+  background-color: #FEC425;
+  border: solid 3px white;
+  border-radius: 10px;
+  border-style: inset;
+  animation-name: responsiveBox1_E;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox1_E; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox1_E 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive2_E  {
+  animation-name: responsiveBox2_E;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox2_E; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox2_E 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive3_E  {
+  clear:both;
+  margin-top:10px;
+  animation-name: responsiveBox3_E;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox3_E; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox3_E 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive4_E  {
+  margin-top:10px;
+  animation-name: responsiveBox4_E;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox4_E; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox4_E 4s infinite; /* Chrome, Safari, Opera */
+}
+
+
+/*********  Responsive Design - Fluid-Elastic Hybrid Responsive   ***********/
+#OuterboxResponsive1_H{
+  width: 500px;
+  height:500px;
+}
+/* The animation code */
+@keyframes responsiveBox1_H {
+     0%   {left:0px; top:0px; width:22%; height:22%;}
+	50% {left:0px; top:0px; width:15%; height:15%;}
+	50%   {left:0px; top:0px; width:15%; height:15%;}
+	67%   {left:0px; top:0px; width:15%; height:15%;}
+	83%   {left:0px; top:0px; width:15%; height:15%;}
+	93%   {left:0px; top:0px; width:15%; height:15%;}
+	100% {left:0px; top:0px; width:15%; height:15%;}
+
+}
+@-webkit-keyframes responsiveBox1_H{
+     0%   {left:0px; top:0px; width:22%; height:22%;}
+	50% {left:0px; top:0px; width:15%; height:15%;}
+	50%   {left:0px; top:0px; width:15%; height:15%;}
+	67%   {left:0px; top:0px; width:15%; height:15%;}
+	83%   {left:0px; top:0px; width:15%; height:15%;}
+	93%   {left:0px; top:0px; width:15%; height:15%;}
+	100% {left:0px; top:0px; width:15%; height:15%;}
+	}
+@keyframes responsiveBox2_H {
+  0%   {left:0px; top:0px; width:22%; height:22%;}
+  50% {left:0px; top:0px; width:15%; height:15%;}
+  50%   {left:0px; top:0px; width:15%; height:15%;}
+  67%   {left:0px; top:0px; width:15%; height:15%;}
+  83%   {left:0px; top:170px; width:15%; height:15%;}
+  93%{left:-85px; top: 170px; width:15%; height:15%;}
+  100% {left:-85px; top: 170px; width:15%; height:15%;}
+}
+@-webkit-keyframes responsiveBox2_H{
+  0%   {left:0px; top:0px; width:22%; height:22%;}
+  50% {left:0px; top:0px; width:15%; height:15%;}
+  50%   {left:0px; top:0px; width:15%; height:15%;}
+  67%   {left:0px; top:0px; width:15%; height:15%;}
+  83%   {left:0px; top:170px; width:15%; height:15%;}
+  93%{left:-85px; top: 170px; width:15%; height:15%;}
+  100% {left:-85px; top: 170px; width:15%; height:15%;}
+	}
+@keyframes responsiveBox3_H{
+         0%   {left:0px; top:0px; width:22%; height:22%;}
+	50% {left:0px; top:0px; width:15%; height:15%;}
+	50%   {left:0px; top:0px; width:15%; height:15%;}
+	67%   {left:0px; top:0px; width:15%; height:15%;}
+	83%   {left:0px; top:0px; width:15%; height:15%;}
+	93%{left:0px; top:0px; width:15%; height:15%;}
+	100% {left:0px; top:0px; width:15%; height:15%;}
+}
+@-webkit-keyframes responsiveBox3_H{
+     0%   {left:0px; top:0px; width:22%; height:22%;}
+	50% {left:0px; top:0px; width:15%; height:15%;}
+	50%   {left:0px; top:0px; width:15%; height:15%;}
+	67%   {left:0px; top:0px; width:15%; height:15%;}
+	83%   {left:0px; top:0px; width:15%; height:15%;}
+	93% {left:0px; top:0px; width:15%; height:15%;}
+	100% {left:0px; top:0px; width:15%; height:15%;}
+}
+@keyframes responsiveBox4_H {
+  0%   {left:0px; top:0px; width:22%; height:22%;}
+  50% {left:0px; top:0px; width:15%; height:15%;}
+  50%   {left:0px; top:0px; width:15%; height:15%;}
+  67%   {left:0px; top:0px; width:15%; height:15%;}
+  83%   {left:0px; top:170px; width:15%; height:15%;}
+  93% {left:-85px; top: 170px; width:15%; height:15%;}
+  100% {left:-85px; top: 170px; width:15%; height:15%;}
+}
+@-webkit-keyframes responsiveBox4_H{
+  0%   {left:0px; top:0px; width:22%; height:22%;}
+  50% {left:0px; top:0px; width:15%; height:15%;}
+  50%   {left:0px; top:0px; width:15%; height:15%;}
+  67%   {left:0px; top:0px; width:15%; height:15%;}
+  83%   {left:0px; top:170px; width:15%; height:15%;}
+  93% {left:-85px; top: 170px; width:15%; height:15%;}
+  100% {left:-85px; top: 170px; width:15%; height:15%;}
+}
+#boxResponsive1_H, #boxResponsive2_H, #boxResponsive3_H, #boxResponsive4_H{
+  width: 22%;
+  height: 22%;
+  float:left;
+  margin-left:10px;
+  position: relative;
+  background-color: #FEC425;
+  border: solid 3px white;
+  border-radius: 10px;
+  border-style: inset;
+  animation-name: responsiveBox1_H;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox1_H; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox1_H 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive2_H  {
+  animation-name: responsiveBox2_H;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox2_H; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox2_H 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive3_H  {
+  clear:both;
+  margin-top:10px;
+  animation-name: responsiveBox3_H;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox3_H; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox3_H 4s infinite; /* Chrome, Safari, Opera */
+}
+#boxResponsive4_H  {
+  margin-top:10px;
+  animation-name: responsiveBox4_H;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: responsiveBox4_H; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;/* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+  -moz-animation: responsiveBox4_H 4s infinite; /* Chrome, Safari, Opera */
+}
+
+
+/***** Media Quiries *****/
+@media only screen and (max-width: 1007px) {
+
+.col-md-9 {
+  width: 100%;
+}
+.exploreHeader2 h1.long{
+  font-size: 3.1em;
+}
+.containerGears {
+  padding:0;
+}
+}
+
+@media only screen and (max-width: 830px) {
+.containerGears {
+  height: 350px;
+}
+}
+@media only screen and (max-width: 660px) {
+.containerGears {
+  height: 370px;
+}
+.exploreHeader2 {
+  width:100%;
+  clear:both;
+  float:none;
+}
+  .exploreHeader2 h1.long {
+  width:100%;
+  clear:both;
+  float:none;
+  text-align:center;
+}
+}
+@media only screen and (max-width: 565px) {
+  /***************** social  Media Mega Phone animation  *****************/
+#socialAnimationBox{	
+	display:none;
+}
+#socialAnimationBox2{
+	display:block;
+	width:350px;
+	height:169px;
+	overflow: hidden;
+}
+#socialMegaPhone2{
+	width:200px;
+	height:169px;
+	float:left;
+	position:relative;
+	background-image:url('../images/socialMediaAnimation2.png');
+	z-index:20;
+}
+#socialIcons2{
+	width:100px;
+	height:169px;
+	float:left;
+	position:relative;
+	background-image:url('../images/socialAnimationIcons2.png');
+	-webkit-animation: social2 8s steps(8) infinite;
+	animation: social2 8s steps(8) infinite;
+	z-index:20;
+}
+@keyframes social2 {
+   0% { background-position: 716px; }
+   100% { background-position: -716px; }
+}
+@-webkit-keyframes social2{
+	0% { background-position: 716px; }
+   100% { background-position: -716px; }
+}
+}
+@media only screen and (max-width: 465px) {
+/****** Responsive grid *******/
+
+#OuterboxResponsive1 {
+	width: 450px;
+	height: 320px;
+}
+#boxResponsive1, #boxResponsive2, #boxResponsive3,#boxResponsive4{
+    width: 60px;
+    height: 60px;
+}
+@keyframes responsiveBox2 {
+    0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:140px;}
+	85% {left:-70px;; top: 140px;}
+    100% {left:-70px; top: 140px;}
+}
+@-webkit-keyframes responsiveBox2{
+	0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:140px;}
+	85% {left:-70px;; top: 140px;}
+    100% {left:-70px; top: 140px;}
+}
+
+@keyframes responsiveBox4 {
+    0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:140px;}
+	85% {left:-70px;; top: 140px;}
+    100% {left:-70px; top: 140px;}
+}
+@-webkit-keyframes responsiveBox4{
+    0%   {left:0px; top:0px;}
+	25%   {left:0px; top:0px;}
+	50%   {left:0px; top:140px;}
+	85% {left:-70px;; top: 140px;}
+    100% {left:-70px;; top: 140px;}
+}
+}
+@media only screen and (max-width: 400px) {
+.containerGears {
+    height: 430px;
+}
+}
